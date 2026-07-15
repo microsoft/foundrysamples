@@ -1,0 +1,1 @@
+All code samples are provided "as-is" without warranties or support commitments. Users are responsible for validating security, compliance, reliability, and operational requirements before production use.
