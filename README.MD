@@ -48,59 +48,59 @@ into an existing project without importing this repository.
 ### Module 1: Connect to a model
 
 1. [Send a minimal text request using Microsoft Entra ID](01-model-basics/01-minimal-text-request/)
-2. Stream a response and handle cancellation
-3. Return validated structured output as a Python model
-4. Send text and an image in a multimodal request
+2. [Stream a response and handle cancellation](01-model-basics/02-streaming-response/)
+3. [Return validated structured output as a Python model](01-model-basics/03-structured-output/)
+4. [Send text and an image in a multimodal request](01-model-basics/04-multimodal-request/)
 
 Outcome: developers can make secure model calls and choose between text,
 streaming, structured, and multimodal responses.
 
 ### Module 2: Integrate with an application
 
-5. Wrap model access behind an application service
-6. Add an AI endpoint to an existing FastAPI application
-7. Handle timeouts, throttling, retries, and service errors
-8. Test AI-dependent code with a fake client and deterministic fixtures
+5. [Wrap model access behind an application service](02-application-integration/01-model-service/)
+6. [Add an AI endpoint to an existing FastAPI application](02-application-integration/02-fastapi-endpoint/)
+7. [Handle timeouts, throttling, retries, and service errors](02-application-integration/03-resilience-and-errors/)
+8. [Test AI-dependent code with a fake client and deterministic fixtures](02-application-integration/04-testing-with-fakes/)
 
 Outcome: developers can add AI without coupling business logic to an SDK or a
 specific model deployment.
 
 ### Module 3: Ground responses with data
 
-9. Create embeddings for local documents
-10. Build and query a small local vector index
-11. Retrieve from Azure AI Search with filters
-12. Generate a grounded answer with citations and a no-answer path
+9. [Create embeddings for local documents](03-grounding-and-search/01-document-embeddings/)
+10. [Build and query a small local vector index](03-grounding-and-search/02-local-vector-index/)
+11. [Retrieve from Azure AI Search with filters](03-grounding-and-search/03-azure-ai-search/)
+12. [Generate a grounded answer with citations and a no-answer path](03-grounding-and-search/04-grounded-answers-with-citations/)
 
 Outcome: developers can build a retrieval-augmented generation flow, understand
 its moving parts, and avoid unsupported answers.
 
 ### Module 4: Add tools and agents
 
-13. Define and execute a typed function tool
-14. Run a multi-turn agent with conversation state
-15. Require human approval before a sensitive tool call
-16. Coordinate a small sequential workflow with Microsoft Agent Framework
+13. [Define and execute a typed function tool](04-tools-and-agents/01-typed-function-tool/)
+14. [Run a multi-turn agent with conversation state](04-tools-and-agents/02-multi-turn-agent/)
+15. [Require human approval before a sensitive tool call](04-tools-and-agents/03-human-approval/)
+16. [Coordinate a small sequential workflow with Microsoft Agent Framework](04-tools-and-agents/04-sequential-workflow/)
 
 Outcome: developers can decide when function calling is enough and when an agent
 or workflow is justified.
 
 ### Module 5: Improve safety and quality
 
-17. Apply input and output content safety checks
-18. Defend a grounded flow against prompt injection and unsafe tool arguments
-19. Build a versioned JSON Lines evaluation dataset
-20. Run relevance, groundedness, safety, and task-success evaluations
+17. [Apply input and output content safety checks](05-safety-and-evaluation/01-content-safety/)
+18. [Defend a grounded flow against prompt injection and unsafe tool arguments](05-safety-and-evaluation/02-prompt-injection-defense/)
+19. [Build a versioned JSON Lines evaluation dataset](05-safety-and-evaluation/03-evaluation-dataset/)
+20. [Run relevance, groundedness, safety, and task-success evaluations](05-safety-and-evaluation/04-quality-evaluation/)
 
 Outcome: developers can define measurable quality gates before releasing an AI
 feature.
 
 ### Module 6: Prepare for production
 
-21. Trace model, retrieval, and tool calls with OpenTelemetry
-22. Record latency, token usage, errors, and estimated cost without logging secrets
-23. Use `DefaultAzureCredential` locally and managed identity in Azure
-24. Add concurrency limits, fallback behavior, and graceful degradation
+21. [Trace model, retrieval, and tool calls with OpenTelemetry](06-production-readiness/01-opentelemetry-tracing/)
+22. [Record latency, token usage, errors, and estimated cost without logging secrets](06-production-readiness/02-metrics-and-cost/)
+23. [Use `DefaultAzureCredential` locally and managed identity in Azure](06-production-readiness/03-managed-identity/)
+24. [Add concurrency limits, fallback behavior, and graceful degradation](06-production-readiness/04-concurrency-and-fallbacks/)
 
 Outcome: developers can observe, secure, and operate an AI feature in an existing
 service.
