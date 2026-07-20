@@ -193,3 +193,5 @@ shared state.
 All code samples are provided "as-is" without warranties or support commitments.
 Users are responsible for validating security, compliance, reliability, and
 operational requirements before production use.
+
+please reach out to nitinkum@microsoft.com or gaccount4m@gmail.com in case you want to discuss on this
